@@ -1,0 +1,74 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: darkgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bluebox {
+  background-color: blue;
+  width: 100px;
+  height: 35px;
+  margin: 2rem auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  height: 100px;
+  background-color: honeydew;
+  width: 80vw;
+  float: right;
+  z-index: -1;
+}
+
+.username {
+  background-color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  padding: 0.2rem 1rem;
+  border-radius: 12px;
+}
+
+main {
+  margin-left: 200px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  height: 300px;
+  width: 60vw;
+  background-color: bisque;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup input {
+  margin: 2rem auto;
+}
+
+.popup button {
+  margin: 2rem auto;
+}
+
+.circle {
+  margin-top: 3rem;
+  margin-right: 2rem;
+  align-self: flex-end;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
