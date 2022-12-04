@@ -1,0 +1,92 @@
+body {
+  display: flex;
+}
+aside {
+  width: 20vw;
+  height: 100vh;
+  background-color: gray;
+}
+
+.bluebox {
+  height: 10vh;
+  width: 10vw;
+  background-color: blue;
+  margin: 2rem auto;
+}
+
+main {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  height: 10vh;
+  background-color: darkgray;
+}
+
+.header span {
+  background-color: gray;
+  float: right;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.popup {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: pink;
+  width: 60vh;
+}
+
+.popup input,
+.popup button {
+  margin: 0 auto;
+}
+
+.circle {
+  background-color: gray;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 2rem;
+  align-self: flex-end;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 560px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+  }
+  .popup {
+    width: 100%;
+    align-self: center;
+  }
+
+  .popup button {
+    display: none;
+  }
+  .circle {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .purple-box {
+    height: 5vh;
+    width: 15vh;
+    background-color: purple;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+}
